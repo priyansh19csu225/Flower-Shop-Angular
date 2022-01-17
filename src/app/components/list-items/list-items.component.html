@@ -1,0 +1,30 @@
+<!-- <div>
+  <span *ngFor="let product of productsList">
+    {{product.name}}
+  </span>
+</div> -->
+
+
+<div class="container">
+  <div class="row">
+    <tr *ngFor="let product of productsList">
+      <td><img [src]="product.url" alt="image" width="100" height="100"></td>
+      <td>{{product.name}}</td>
+      <td></td>
+      <td>Rs. {{product.price}}</td>
+      
+      <!-- <img ng-src="{{product.url}}"> -->
+      <!-- <img [src]="product.url" alt="image">
+      {{product.name}} - Rs. {{product.price}} -->
+      <td><button (click)="AddProductToCart(product)">Add To Cart</button></td>
+    </tr>
+        
+
+    
+  </div>
+</div>
+
+<div>
+  <span>Total Cart Value - Rs.{{cartTotal}}</span> - 
+  <a [routerLink]="['../cart']">Go To Cart</a>
+</div>

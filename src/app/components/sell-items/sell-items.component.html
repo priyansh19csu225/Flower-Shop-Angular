@@ -1,0 +1,19 @@
+<div>
+    <input type="text" [(ngModel)]="sellername" placeholder="Name">
+    <br>
+    <input type="email" [(ngModel)]="email" placeholder="Email">
+    <br>
+    <input type="text" [(ngModel)]="name" placeholder="Product name">
+    <br>
+    <input type="number" [(ngModel)]="price" placeholder="Product price">
+    <br>
+    <input type="number" [(ngModel)]="quantity" placeholder="Product Quantity">
+    <br>
+  <button (click)="postData()">
+    Submit
+  </button>
+  
+</div>
+<div>
+  <a [routerLink]="['/']"> Go Back</a>
+</div>
